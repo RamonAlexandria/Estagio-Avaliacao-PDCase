@@ -1,0 +1,9 @@
+<select class="form-select" aria-label="Default select example" id="d1">
+  <option selected value="">Selecione</option>
+  
+  @for (item of lista; track item[nomeChave]) {
+    <option [value]="item[nomeChave]">
+      {{ item[nomeExibicao] }}
+    </option>
+  }
+</select>

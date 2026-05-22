@@ -1,0 +1,23 @@
+<p>Agendamentos:</p>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">TÍTULO</th>
+      <th scope="col">HORA INÍCIO</th>
+      <th scope="col">HORA FIM</th>
+      <th scope="col">SALA</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (agendamento of lista; track agendamento.idAgendamento) {
+      <tr>
+        <th scope="row">{{ agendamento.idAgendamento }}</th>
+        <td>{{ agendamento.titulo }}</td>
+        <td>{{ agendamento.horaInicio }}</td>
+        <td>{{ agendamento.horaFim }}</td>
+        <td>{{ agendamento.sala.idSala }}</td>
+      </tr>
+    }
+  </tbody>
+</table>

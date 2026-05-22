@@ -1,0 +1,16 @@
+<div id = "formulario">
+    <p>Salas:</p>
+    <app-select-component 
+        [lista]="salas" 
+        nomeChave="idSala" 
+        nomeExibicao="numeroDaSala">
+        </app-select-component>
+        <p>Colaboradores:</p>
+
+    <app-select-component [lista]="colaboradores"></app-select-component>
+</div>
+<br>
+
+<div>
+    <app-tabela-component [lista]="agendamentos"></app-tabela-component>
+</div>
